@@ -26,6 +26,9 @@ https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes
 
 https://linkdin-skill-assement.netlify.app/
 
+## image on data 
+All image is hosted on imgbb.for adding data you can use imgbb direct link.
+
 
 
 
