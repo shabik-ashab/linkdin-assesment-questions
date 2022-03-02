@@ -16,7 +16,7 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ## cotribute 
-you can create a issue and work in it . 
+you can create a issue and work in it . Make sure to make good comments for others and write clean code.
 
 ## Refference
 
