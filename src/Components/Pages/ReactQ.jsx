@@ -47,7 +47,7 @@ const ReactQ = () => {
               target="_blank"
               href="https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/master/react/reactjs-quiz.md"
             >
-              Visit Link for Answer
+              Refference
             </a>
           </Box>
         </Typography>
@@ -67,9 +67,9 @@ const ReactQ = () => {
                     onChange={handleSearch}
                     placeholder="Search Question" /> */}
         </Box>
-        <Box sx={{ mt: 3 }}>
+        <Box sx={{ mt: 3, }}>
           {displayQuestion.map((question) => (
-            <Box sx={{ mb: 3 }}>
+            <Box sx={{ mb: 2,border:'1px solid black',mr:10 }}>
               <Box sx={{ m: 1 }} key={question.id}>
                 <Typography sx={{ fontSize: "1.1em" }}>{question.q}</Typography>
               </Box>
