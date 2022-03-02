@@ -7,7 +7,7 @@ import Navbar from '../Navbar'
 
 
 const ReactQ = () => {
-    const [products, setProducts] = useState([]);
+    const [Questions, setQuestions] = useState([]);
     const [displayQuestion, setDisplayQuestions] = useState([]);
     // setReactQuestion(reactQ);
     
@@ -16,15 +16,15 @@ const ReactQ = () => {
             .then(res => res.json())
             .then(data => {
                 setDisplayQuestions(data);
-                setProducts(data)
+                setQuestions(data)
             });
     }, []);
 
-    console.log(products);
+    console.log(Questions);
     const handleSearch = event => {
         const searchText = event.target.value;
 
-        const matchedProducts = products.filter(product => product.q.toLowerCase().includes(searchText.toLowerCase()));
+        const matchedProducts = Questions.filter(product => product.q.toLowerCase().includes(searchText.toLowerCase()));
 
         setDisplayQuestions(matchedProducts);
     }
@@ -53,7 +53,7 @@ const ReactQ = () => {
         <Box sx={{mt:3}}>
             {
                 displayQuestion.map((question) => (
-                    <>
+                    <Box sx={{mb:3}}>
                      <Box sx={{m:1}} key={question.id}>
                         {question.q}
                     </Box >
@@ -63,7 +63,7 @@ const ReactQ = () => {
                             <img src={ question.codeImg} alt="code image" />
                         </Box>
                     }
-                    </>
+                    </Box>
                  
                 ))
             }
